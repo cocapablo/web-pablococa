@@ -22,6 +22,7 @@ header{
     font-family: 'Playfair Display', serif;
 }
 
+/* Viejos estilos de mi nav
 header nav {
     margin-top: 20px;
 }
@@ -32,10 +33,14 @@ header nav ul li{
     padding: 10px;
 }
 
+*/
+
 a{
     text-decoration: none;
     color: black;
 }
+
+
 
 /* estilos de home */
 main {
