@@ -53,4 +53,85 @@ main p {
 }
 
 
+/* estilos reusables */
+/* Estilos de section */
+.card-pablo-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-pablo-panel h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+section .card-pablo {
+    background-color: beige;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2%;
+    
+}
+
+section .card-pablo h3 {
+    margin-bottom: 1rem;
+}
+
+/* Clase .img-descripcion-pablo */
+.img-descripcion-pablo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-descripcion-pablo p {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Propiedades de mq */
+@media screen and (min-width:1024px) {
+    
+
+    .img-descripcion-pablo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "imagen descripcion"
+        ;
+
+        align-items: center;
+    }  
+
+    
+
+    .img-descripcion-pablo img {
+        grid-area: imagen;
+        margin-bottom: 0.2rem;
+    }
+
+    .img-descripcion-pablo p {
+        grid-area: descripcion;
+    }
+
+    main .div-img {
+        grid-area: img;
+    }
+    
+    /*
+    main .botones {
+        grid-area: botones;
+        margin-top: 0.2rem;
+    }
+    */
+
+    .card-pablo-panel {
+        flex-direction: row;
+    }
+}
+
+
+
 
