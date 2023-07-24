@@ -1,0 +1,5 @@
+//Mixin
+
+@mixin destacar($x, $y) {
+    transform: scale($x, $y);
+}

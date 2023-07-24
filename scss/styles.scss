@@ -1,0 +1,103 @@
+@import "extras/variables";
+@import "extras/mixin";
+
+
+/* RESET */
+
+/* selector universal */
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos generales */
+body {
+    background-color: whitesmoke
+    
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: violet;
+    font-family: 'Playfair Display', serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* estilos de home */
+main {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    h1 {
+        margin-bottom: 20px;    
+    }
+    p {
+        font-size: 25px;
+        margin-bottom: 20px;    
+    }
+}
+
+
+
+/* estilos reusables 
+Se utilizan en varios html
+*/
+
+/* Estilos de section */
+.card-pablo-panel {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        margin: 1rem;    
+    }
+
+    .card-pablo {
+        background-color: $color-fondo-tarjeta;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 2%;
+        color: $color-texto-tarjeta;
+
+        h3 {
+            margin-bottom: 1rem;
+            color: $color-titulo-tarjeta;    
+        }
+       
+        
+    }
+
+    .card-pablo-extra {
+        @extend .card-pablo;
+        display: none;
+    }
+}
+
+
+
+/* Clase .img-descripcion-pablo */
+.img-descripcion-pablo {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+}
+
+
+@import "extras/tablet";
+@import "extras/desktop";

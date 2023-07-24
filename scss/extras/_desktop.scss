@@ -1,0 +1,62 @@
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+    
+    /* Propiedades de clase .img-descripcion*/
+    .img-descripcion-pablo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "imagen descripcion"
+        ;
+
+        align-items: center;
+
+        img {
+            grid-area: imagen;
+            margin-bottom: 0.2rem;
+            transition: 1s; 
+            
+        }
+
+        img:hover {
+            @include destacar(1.1, 1.1);
+        }
+
+        p {
+            grid-area: descripcion;    
+        }
+
+        
+    }  
+
+           
+
+    /* Propiedades de las clases .card-pablo */
+        
+    .card-pablo-panel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "titulo titulo titulo";
+
+        h2 {
+            grid-area: titulo;    
+        }
+
+        .card-pablo {
+            transition: 1s;
+        }
+        .card-pablo-extra {
+            transition: 1s;
+            display: block;
+        }
+
+        .card-pablo:hover, .card-pablo-extra:hover {
+            @include destacar(1.1, 1.1);
+        }
+    }
+
+    
+}

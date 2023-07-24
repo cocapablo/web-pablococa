@@ -1,0 +1,3 @@
+#Ignora la carpeta node_modules de SASS
+node_modules
+css/estilos-bak.css
