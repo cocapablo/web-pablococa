@@ -73,7 +73,7 @@ Se utilizan en varios html
     margin: 1rem;
 }
 
-section .card-pablo {
+section .card-pablo, section .card-pablo-extra {
     background-color: beige;
     margin: 1rem;
     padding: 1rem;
@@ -81,8 +81,12 @@ section .card-pablo {
     
 }
 
-section .card-pablo h3 {
+section .card-pablo h3, section .card-pablo-extra {
     margin-bottom: 1rem;
+}
+
+section .card-pablo-extra {
+    display: none;
 }
 
 /* Clase .img-descripcion-pablo */
@@ -99,6 +103,16 @@ section .card-pablo h3 {
 }
 
 /* Propiedades de mq */
+/*Tablet*/
+@media screen and (min-width:600px) {
+     
+    
+    .card-pablo-panel {
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
 @media screen and (min-width:1024px) {
     
 
@@ -124,9 +138,28 @@ section .card-pablo h3 {
         grid-area: descripcion;
     }
 
+    section .card-pablo-extra {
+        display: block;
+    } 
+
+    /*
     .card-pablo-panel {
         flex-direction: row;
+     
+    */
+
+    .card-pablo-panel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "titulo titulo titulo";
     }
+
+    .card-pablo-panel h2 {
+        grid-area: titulo;
+    }
+
+    
 }
 
 
