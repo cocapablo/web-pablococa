@@ -96,11 +96,14 @@ section .card-pablo-extra {
     
 }
 
+
 .img-descripcion-pablo p {
     font-size: 1rem;
     padding: 1rem;
     margin: 1rem;
 }
+
+
 
 /* Propiedades de mq */
 /*Tablet*/
@@ -115,7 +118,7 @@ section .card-pablo-extra {
 /* Desktop */
 @media screen and (min-width:1024px) {
     
-
+    /* Propiedades de clase .img-descripcion*/
     .img-descripcion-pablo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -128,26 +131,66 @@ section .card-pablo-extra {
     }  
 
     
-
+    
     .img-descripcion-pablo img {
         grid-area: imagen;
         margin-bottom: 0.2rem;
+        transition: 1s;
     }
+
+    .img-descripcion-pablo img:hover {
+        transform: scale(1.1, 1.1);
+    }
+    
+    /*
+    .img-contexto-pablo {
+        grid-area: imagen;
+        margin-bottom: 0.2rem;
+        transition: 1s;    
+        position: relative;
+    }
+
+    .img-contexto-pablo:hover {
+        transform: scale(1.1, 1.1);
+        position: relative;
+    }
+
+    .img-contexto-pablo:hover .texto-img-pablo {
+        display: block;
+        
+        position: absolute;
+        
+        border-radius: 6px;
+        /*
+        top: 50%;
+        left: 50%;
+        
+        top: 25px;
+        left: 25pxgit;
+        /*
+        transform: translate(-50%, -50%);
+        /*
+        opacity: 0;
+        transition: opacity 0.3s; 
+        background-color: rgba(55, 54,54, 0.7 );
+        color: white;
+        
+        
+    }
+    */
 
     .img-descripcion-pablo p {
         grid-area: descripcion;
     }
 
+       
+
+    /* Propiedades de las clases .card-pablo */
     section .card-pablo-extra {
         display: block;
     } 
 
-    /*
-    .card-pablo-panel {
-        flex-direction: row;
-     
-    */
-
+    
     .card-pablo-panel {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -159,7 +202,13 @@ section .card-pablo-extra {
         grid-area: titulo;
     }
 
-    
+    .card-pablo, .card-pablo-extra {
+        transition: 1s;
+    }
+
+    .card-pablo:hover, .card-pablo-extra:hover {
+        transform: scale(1.1, 1.1);
+    }
 }
 
 
