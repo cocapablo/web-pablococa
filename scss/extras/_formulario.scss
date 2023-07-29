@@ -1,0 +1,27 @@
+/* estilos del formulario */
+
+.comunicate-pablo {
+    margin: 30px;
+}
+
+.form-pablo {
+    background-color: $color-fondo-tarjeta;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 2%;
+    color: $color-texto-tarjeta;
+    border: 2px solid $color-texto-tarjeta;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    
+    
+    
+    .form-label-input-panel-pablo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 5px;
+    }
+
+}

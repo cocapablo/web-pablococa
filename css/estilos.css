@@ -73,6 +73,26 @@ Se utilizan en varios html
     padding: 1rem;
     margin: 1rem; }
 
+/* estilos del formulario */
+.comunicate-pablo {
+  margin: 30px; }
+
+.form-pablo {
+  background-color: beige;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 2%;
+  color: black;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center; }
+  .form-pablo .form-label-input-panel-pablo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 5px; }
+
 /*Tablet*/
 @media screen and (min-width: 600px) {
   .card-pablo-panel {
