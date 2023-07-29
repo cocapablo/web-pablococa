@@ -98,6 +98,8 @@ Se utilizan en varios html
     display: grid;
     grid-template-columns: 1fr 2fr;
     row-gap: 5px; }
+  .form-pablo textarea {
+    max-width: 90%; }
 
 /*Tablet*/
 @media screen and (min-width: 600px) {
@@ -140,12 +142,7 @@ Se utilizan en varios html
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "logo derechos redes";
-    /*  poner footer abajo */
-    /*
-        position: absolute;
-        bottom: 0;
-        */ }
+    grid-template-areas: "logo derechos redes"; }
     footer .logo-footer {
       grid-area: logo;
       display: flex; }
