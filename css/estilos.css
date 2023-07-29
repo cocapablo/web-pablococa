@@ -10,11 +10,17 @@
 body {
   background-color: whitesmoke; }
 
-header {
+header, footer {
   padding: 10px;
   text-align: center;
   background-color: violet;
   font-family: 'Playfair Display', serif; }
+
+footer {
+  display: flex;
+  flex-direction: column; }
+  footer .logo-footer {
+    display: none; }
 
 a {
   text-decoration: none;
@@ -128,4 +134,24 @@ Se utilizan en varios html
       transition: 1s;
       display: block; }
     .card-pablo-panel .card-pablo:hover, .card-pablo-panel .card-pablo-extra:hover, .card-pablo-panel .card-pablo-extra:hover {
-      transform: scale(1.1, 1.1); } }
+      transform: scale(1.1, 1.1); }
+  /* Propiedades del footer  */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "logo derechos redes";
+    /*  poner footer abajo */
+    /*
+        position: absolute;
+        bottom: 0;
+        */ }
+    footer .logo-footer {
+      grid-area: logo;
+      display: flex; }
+    footer .derechos-pablo {
+      grid-area: derechos;
+      display: flex;
+      flex-direction: column-reverse; }
+    footer .redes-pablo {
+      grid-area: redes; } }

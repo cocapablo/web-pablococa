@@ -58,4 +58,34 @@
     }
 
     
+    /* Propiedades del footer  */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo derechos redes";
+        
+
+        .logo-footer {
+            grid-area: logo;
+            display: flex;
+        }
+
+        .derechos-pablo {
+            grid-area: derechos;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .redes-pablo {
+            grid-area: redes;
+        }
+
+        /*  poner footer abajo */
+        /*
+        position: absolute;
+        bottom: 0;
+        */
+    }
 }

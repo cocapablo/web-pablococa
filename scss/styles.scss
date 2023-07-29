@@ -26,6 +26,15 @@ header{
     font-family: 'Playfair Display', serif;
 }
 
+footer {
+    @extend header;
+    display: flex;
+    flex-direction: column;
+    .logo-footer {
+        display: none;
+    }
+}
+
 
 a{
     text-decoration: none;
