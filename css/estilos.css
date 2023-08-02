@@ -13,7 +13,8 @@ body {
 header, footer {
   padding: 10px;
   text-align: center;
-  background-color: violet;
+  background-color: #81B29A;
+  color: black;
   font-family: 'Playfair Display', serif; }
 
 footer {
@@ -36,7 +37,8 @@ img {
 Les coloco un porcentaje para evitar el scroll horizontal
 */
 iframe {
-  max-width: 90%; }
+  max-width: 90%;
+  margin: 5px; }
 
 /* estilos de home */
 main {
@@ -59,7 +61,7 @@ Se utilizan en varios html
     text-align: center;
     margin: 1rem; }
   .card-pablo-panel .card-pablo, .card-pablo-panel .card-pablo-extra {
-    background-color: beige;
+    background-color: #F4F1DE;
     margin: 1rem;
     padding: 1rem;
     border-radius: 2%;
@@ -79,17 +81,52 @@ Se utilizan en varios html
     padding: 1rem;
     margin: 1rem; }
 
+/* Clases anticipo */
+.anticipo-panel {
+  display: flex;
+  flex-direction: column; }
+  .anticipo-panel .anticipo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2%;
+    box-shadow: 5px 10px 5px #3D405B;
+    text-align: center;
+    background-color: #F2CC8F;
+    color: black; }
+    .anticipo-panel .anticipo .anticipo-titulo {
+      font-size: 2rem;
+      color: black; }
+    .anticipo-panel .anticipo .anticipo-descripcion {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 1rem;
+      color: black; }
+    .anticipo-panel .anticipo .anticipo-boton {
+      display: inline-block;
+      margin: auto;
+      padding: 0.3rem;
+      background: linear-gradient(#c5e7d6, #81B29A);
+      color: white;
+      font-size: 1.1rem;
+      border: 2px solid black;
+      border-radius: 5%; }
+    .anticipo-panel .anticipo .anticipo-boton:hover {
+      transform: scale(1.1, 1.1); }
+
 /* estilos del formulario */
 .comunicate-pablo {
   margin: 30px; }
 
 .form-pablo {
-  background-color: beige;
+  background-color: #F4F1DE;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 2%;
   color: black;
   border: 2px solid black;
+  box-shadow: 5px 10px 5px #3D405B;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -108,6 +145,9 @@ Se utilizan en varios html
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  /* Propiedades de body*/
+  .full-pantalla {
+    min-height: 80vh; }
   /* Propiedades de clase .img-descripcion*/
   .img-descripcion-pablo {
     display: grid;
@@ -137,6 +177,34 @@ Se utilizan en varios html
       display: block; }
     .card-pablo-panel .card-pablo:hover, .card-pablo-panel .card-pablo-extra:hover, .card-pablo-panel .card-pablo-extra:hover {
       transform: scale(1.1, 1.1); }
+  /* Propiedades de .contacto-pablo */
+  .contacto-pablo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "formulario comunicate"; }
+    .contacto-pablo h1 {
+      grid-area: titulo; }
+    .contacto-pablo .comunicate-pablo {
+      grid-area: comunicate; }
+    .contacto-pablo .mandame-form-pablo {
+      grid-area: formulario; }
+  /*Propiedades de clases anticipo */
+  .anticipo-panel {
+    display: flex;
+    flex-direction: row; }
+    .anticipo-panel .anticipo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 20% 70% 10%;
+      grid-template-areas: "anticipo titulo" "anticipo descripcion" "anticipo boton"; }
+      .anticipo-panel .anticipo .anticipo-titulo {
+        grid-area: titulo; }
+      .anticipo-panel .anticipo .anticipo-vista {
+        grid-area: anticipo; }
+      .anticipo-panel .anticipo .anticipo-descripcion {
+        grid-area: descripcion; }
+      .anticipo-panel .anticipo .anticipo-boton {
+        grid-area: boton; }
   /* Propiedades del footer  */
   footer {
     display: grid;

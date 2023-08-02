@@ -11,6 +11,7 @@
     border-radius: 2%;
     color: $color-texto-tarjeta;
     border: 2px solid $color-texto-tarjeta;
+    box-shadow: 5px 10px 5px $color-sombra-anticipo;
     display: flex;
     flex-direction: column;
     width: 300px;
