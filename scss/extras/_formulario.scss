@@ -1,10 +1,10 @@
 /* estilos del formulario */
 
-.comunicate-pablo {
+.comunicate {
     margin: 30px;
 }
 
-.form-pablo {
+.formulario {
     background-color: $color-fondo-tarjeta;
     margin: 1rem auto;
     padding: 1rem;
@@ -19,7 +19,7 @@
     
     
     
-    .form-label-input-panel-pablo {
+    .form-label-input-panel {
         display: grid;
         grid-template-columns: 1fr 2fr;
         row-gap: 5px;

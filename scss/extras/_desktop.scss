@@ -10,7 +10,7 @@
     }
 
     /* Propiedades de clase .img-descripcion*/
-    .img-descripcion-pablo {
+    .img-descripcion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -40,9 +40,9 @@
 
            
 
-    /* Propiedades de las clases .card-pablo */
+    /* Propiedades de las clases .tarjeta */
         
-    .card-pablo-panel {
+    .tarjeta-panel {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
@@ -52,22 +52,22 @@
             grid-area: titulo;    
         }
 
-        .card-pablo {
+        .tarjeta {
             transition: 1s;
         }
-        .card-pablo-extra {
+        .tarjeta-extra {
             transition: 1s;
             display: block;
         }
 
-        .card-pablo:hover, .card-pablo-extra:hover {
+        .tarjeta:hover, .tarjeta-extra:hover {
             @include destacar(1.1, 1.1);
         }
     }
 
-    /* Propiedades de .contacto-pablo */
+    /* Propiedades de .contacto */
     
-    .contacto-pablo {
+    .contacto {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
@@ -78,11 +78,11 @@
             grid-area: titulo;
         }
 
-        .comunicate-pablo {
+        .comunicate {
             grid-area: comunicate;
         }
 
-        .mandame-form-pablo {
+        .mandame-form {
             grid-area: formulario;
         }
 
@@ -138,13 +138,13 @@
             display: flex;
         }
 
-        .derechos-pablo {
+        .derechosreservados {
             grid-area: derechos;
             display: flex;
             flex-direction: column-reverse;
         }
 
-        .redes-pablo {
+        .redessociales {
             grid-area: redes;
         }
 

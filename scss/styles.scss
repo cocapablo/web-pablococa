@@ -82,7 +82,7 @@ Se utilizan en varios html
 */
 
 /* Estilos de section */
-.card-pablo-panel {
+.tarjeta-panel {
     display: flex;
     flex-direction: column;
     h2 {
@@ -90,7 +90,7 @@ Se utilizan en varios html
         margin: 1rem;    
     }
 
-    .card-pablo {
+   .tarjeta {
         background-color: $color-fondo-tarjeta;
         margin: 1rem;
         padding: 1rem;
@@ -105,16 +105,16 @@ Se utilizan en varios html
         
     }
 
-    .card-pablo-extra {
-        @extend .card-pablo;
+    .tarjeta-extra {
+        @extend .tarjeta;
         display: none;
     }
 }
 
 
 
-/* Clase .img-descripcion-pablo */
-.img-descripcion-pablo {
+/* Clase .img-descripcion */
+.img-descripcion {
     display: flex;
     flex-direction: column;
     

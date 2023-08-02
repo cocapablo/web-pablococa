@@ -54,29 +54,29 @@ main {
 Se utilizan en varios html
 */
 /* Estilos de section */
-.card-pablo-panel {
+.tarjeta-panel {
   display: flex;
   flex-direction: column; }
-  .card-pablo-panel h2 {
+  .tarjeta-panel h2 {
     text-align: center;
     margin: 1rem; }
-  .card-pablo-panel .card-pablo, .card-pablo-panel .card-pablo-extra {
+  .tarjeta-panel .tarjeta, .tarjeta-panel .tarjeta-extra {
     background-color: #F4F1DE;
     margin: 1rem;
     padding: 1rem;
     border-radius: 2%;
     color: black; }
-    .card-pablo-panel .card-pablo h3, .card-pablo-panel .card-pablo-extra h3 {
+    .tarjeta-panel .tarjeta h3, .tarjeta-panel .tarjeta-extra h3 {
       margin-bottom: 1rem;
       color: black; }
-  .card-pablo-panel .card-pablo-extra {
+  .tarjeta-panel .tarjeta-extra {
     display: none; }
 
-/* Clase .img-descripcion-pablo */
-.img-descripcion-pablo {
+/* Clase .img-descripcion */
+.img-descripcion {
   display: flex;
   flex-direction: column; }
-  .img-descripcion-pablo p {
+  .img-descripcion p {
     font-size: 1rem;
     padding: 1rem;
     margin: 1rem; }
@@ -116,10 +116,10 @@ Se utilizan en varios html
       transform: scale(1.1, 1.1); }
 
 /* estilos del formulario */
-.comunicate-pablo {
+.comunicate {
   margin: 30px; }
 
-.form-pablo {
+.formulario {
   background-color: #F4F1DE;
   margin: 1rem auto;
   padding: 1rem;
@@ -131,16 +131,16 @@ Se utilizan en varios html
   flex-direction: column;
   width: 300px;
   justify-content: center; }
-  .form-pablo .form-label-input-panel-pablo {
+  .formulario .form-label-input-panel {
     display: grid;
     grid-template-columns: 1fr 2fr;
     row-gap: 5px; }
-  .form-pablo textarea {
+  .formulario textarea {
     max-width: 90%; }
 
 /*Tablet*/
 @media screen and (min-width: 600px) {
-  .card-pablo-panel {
+  .tarjeta-panel {
     flex-direction: row; } }
 
 /* Desktop */
@@ -149,44 +149,44 @@ Se utilizan en varios html
   .full-pantalla {
     min-height: 80vh; }
   /* Propiedades de clase .img-descripcion*/
-  .img-descripcion-pablo {
+  .img-descripcion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "imagen descripcion";
     align-items: center; }
-    .img-descripcion-pablo img {
+    .img-descripcion img {
       grid-area: imagen;
       margin-bottom: 0.2rem;
       transition: 1s; }
-    .img-descripcion-pablo img:hover {
+    .img-descripcion img:hover {
       transform: scale(1.1, 1.1); }
-    .img-descripcion-pablo p {
+    .img-descripcion p {
       grid-area: descripcion; }
-  /* Propiedades de las clases .card-pablo */
-  .card-pablo-panel {
+  /* Propiedades de las clases .tarjeta */
+  .tarjeta-panel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "titulo titulo titulo"; }
-    .card-pablo-panel h2 {
+    .tarjeta-panel h2 {
       grid-area: titulo; }
-    .card-pablo-panel .card-pablo, .card-pablo-panel .card-pablo-extra {
+    .tarjeta-panel .tarjeta, .tarjeta-panel .tarjeta-extra {
       transition: 1s; }
-    .card-pablo-panel .card-pablo-extra {
+    .tarjeta-panel .tarjeta-extra {
       transition: 1s;
       display: block; }
-    .card-pablo-panel .card-pablo:hover, .card-pablo-panel .card-pablo-extra:hover, .card-pablo-panel .card-pablo-extra:hover {
+    .tarjeta-panel .tarjeta:hover, .tarjeta-panel .tarjeta-extra:hover, .tarjeta-panel .tarjeta-extra:hover {
       transform: scale(1.1, 1.1); }
-  /* Propiedades de .contacto-pablo */
-  .contacto-pablo {
+  /* Propiedades de .contacto */
+  .contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "titulo titulo" "formulario comunicate"; }
-    .contacto-pablo h1 {
+    .contacto h1 {
       grid-area: titulo; }
-    .contacto-pablo .comunicate-pablo {
+    .contacto .comunicate {
       grid-area: comunicate; }
-    .contacto-pablo .mandame-form-pablo {
+    .contacto .mandame-form {
       grid-area: formulario; }
   /*Propiedades de clases anticipo */
   .anticipo-panel {
@@ -214,9 +214,9 @@ Se utilizan en varios html
     footer .logo-footer {
       grid-area: logo;
       display: flex; }
-    footer .derechos-pablo {
+    footer .derechosreservados {
       grid-area: derechos;
       display: flex;
       flex-direction: column-reverse; }
-    footer .redes-pablo {
+    footer .redessociales {
       grid-area: redes; } }
